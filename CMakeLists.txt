@@ -15,12 +15,12 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
  
 # Declare the executable target built from your sources
 add_executable(
-	WDKinectDKDemo 
+	azureCapture 
 	main_demo_Linux.cpp 
 )
  
 # Link your application with other libraries
-target_link_libraries(WDKinectDKDemo PRIVATE k4a::k4a ${OpenCV_LIBS})
+target_link_libraries(azureCapture PRIVATE k4a::k4a ${OpenCV_LIBS})
  
  
 # Enable C++11

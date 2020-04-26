@@ -14,16 +14,9 @@ int main(int argc, char **argv)
     int captureFrameCount;
     k4a_capture_t capture = NULL;
 
-    if (argc < 2)
-    {
-        printf("%s FRAMECOUNT\n", argv[0]);
-        printf("Capture FRAMECOUNT color and depth frames from the device using the separate get frame APIs\n");
-        returnCode = 2;
-        return 0;
-    }
+  
 
-    captureFrameCount = atoi(argv[1]);
-    printf("Capturing %d frames\n", captureFrameCount);
+   
 
     uint32_t device_count = k4a_device_get_installed_count();
 
